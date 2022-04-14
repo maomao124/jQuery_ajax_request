@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：jQuery_ajax_request
+  File name(文件名): test4
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/14
+  Time(创建时间)： 17:01
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jQuery.js"></script>
+    <style>
+        #result {
+            width: 500px;
+            height: 400px;
+            border: 3px solid chartreuse;
+        }
+    </style>
+</head>
+<body>
+
+<button id="button">点击发送请求-post</button>
+
+<div id="result">
+
+</div>
+
+<script>
+
+    var result = document.getElementById("result");
+
+    $('button').eq(0).click(function ()
+    {
+        //发起ajax请求
+        $.ajax(
+            {
+                //请求的url：
+                url: "server4",
+                //参数：
+                data:
+                    {
+                        a: 56,
+                        b: 5
+                    },
+                //请求类型：
+                type: "get",
+                //响应的数据类型：
+                dataType: "json",
+                //请求成功的回调函数：
+                success: function (data)
+                {
+                    console.log(data);
+                    result.innerHTML = data.message;
+                },
+                //请求失败的回调函数：
+                error: function ()
+                {
+                    alert("网络错误！请稍后再试！");
+                },
+                //设置超时时间：
+                timeout: 2000,
+                //头信息：
+                headers:
+                    {
+
+                    },
+            }
+        )
+    })
+
+</script>
+</body>
+</html>

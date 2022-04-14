@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：jQuery_ajax_request
+  File name(文件名): test2
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/14
+  Time(创建时间)： 16:48
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jQuery.js"></script>
+    <style>
+        #result {
+            width: 500px;
+            height: 400px;
+            border: 3px solid chartreuse;
+        }
+    </style>
+</head>
+<body>
+
+<button id="button">点击发送请求-post</button>
+
+<div id="result">
+
+</div>
+
+<script>
+
+    var result = document.getElementById("result");
+
+    $("button").eq(0).click(function ()
+    {
+        $.post("/server2", {a: 10, b: 35}, function (data)
+        {
+            console.log(data);
+            result.innerHTML = data;
+        })
+    })
+</script>
+</body>
+</html>
