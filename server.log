@@ -1,2 +1,6 @@
 2022-04-14 17:28:05.364  INFO 16148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-04-14 17:28:05.375  INFO 16148 --- [main] m.j.JQueryAjaxRequestApplication         : Started JQueryAjaxRequestApplication in 1.282 seconds (JVM running for 1.723)
+2022-04-14 17:29:31.252  INFO 14376 --- [main] m.j.JQueryAjaxRequestApplicationTests    : Starting JQueryAjaxRequestApplicationTests using Java 16.0.2 on mao with PID 14376 (started by mao in H:\程序\大三下期\jQuery发送ajax请求)
+2022-04-14 17:29:31.254 DEBUG 14376 --- [main] m.j.JQueryAjaxRequestApplicationTests    : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-14 17:29:31.254  INFO 14376 --- [main] m.j.JQueryAjaxRequestApplicationTests    : The following 1 profile is active: "dev"
+2022-04-14 17:29:32.554  INFO 14376 --- [main] m.j.JQueryAjaxRequestApplicationTests    : Started JQueryAjaxRequestApplicationTests in 1.666 seconds (JVM running for 2.454)
