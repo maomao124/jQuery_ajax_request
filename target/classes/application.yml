@@ -85,8 +85,8 @@ spring:
 # 设置日志级别，root表示根节点，即整体应用日志级别
 logging:
  # 日志输出到文件的文件名
-#  file:
-#     name: server.log
+  file:
+     name: server.log
   # 字符集
   charset:
     file: UTF-8
